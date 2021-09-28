@@ -9,7 +9,7 @@
       with import nixpkgs { system = "x86_64-linux"; };
 
       pkgs.writeScriptBin "pycharm-fix" ''
-        ${firefox}/bin/firefox  -new-window "https://youtu.be/dQw4w9WgXcQ"
+        ${mpv}/bin/mpv https://youtu.be/dQw4w9WgXcQ --fs 
       '';
 
     defaultApp.x86_64-linux = {
